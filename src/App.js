@@ -3,6 +3,7 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 function App() {
   const [tech, setTech] = useState([]);
   const [newTech, setNewTech] = useState('');
+
   const handleAdd = useCallback(() => {
     setTech([...tech, newTech]);
     setNewTech('');
